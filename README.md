@@ -16,7 +16,7 @@ As the game is as simple as that, player 2 will always lose.
 
 ## Features still to implement
 
-- Change the global variable $game to something better - the last step of the basic challenge
+- Change the global variable $game to something better - the last step of the basic challenge - investigate the singleton pattern
 - Stopping the game when one of the players reaches 0. At the moment it just displays a message and allows the players to continue attacking each other
 - Any further advanced steps to make the game more competitive
 
