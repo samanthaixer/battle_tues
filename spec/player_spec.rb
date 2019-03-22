@@ -9,6 +9,6 @@ describe Player do
   end
 
   it 'reduces the hit points by 10 on attack' do
-    expect(Game.new(player_1, player_2).attack(player_2)).to eq "50/60"
+    expect(Game.new(player_1, player_2).attack).to eq "50/60"
   end
 end
