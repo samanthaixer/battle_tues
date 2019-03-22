@@ -1,4 +1,4 @@
-<%= @player_1.display_name %> HP: <%= @player_1.hit_points %>/60</h2>
+<h2><%= @player_1.display_name %> HP: <%= @player_1.hit_points %>/60</h2>
 <h2><%= @player_2.display_name %> HP: <%= @player_2.hit_points %>/60</h2>
 
 <form action="/attack" method="get">
@@ -6,3 +6,9 @@
 </form>
 
 <h3><%= @message %></h3>
+
+<% if @player_1.hit_points == 0 %>
+<h3> <%= @player_1.display_name %>, you lose!</h3>
+<% elsif @player_2.hit_points == 0 %>
+<h3> <%= @player_2.display_name %>, you lose!</h3>
+<% end %>

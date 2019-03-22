@@ -33,3 +33,11 @@ feature 'message changes after 2nd attack' do
     expect(page).to have_content("Kim attacked!")
   end
 end
+
+feature 'message changes after 2nd attack' do
+  scenario 'after receiving an attack, Player 2 HP are reduced by 10' do
+    sign_in_and_play
+    11.times { click_button "Attack" }
+    expect(page).to have_content("Kim, you lose")
+  end
+end
