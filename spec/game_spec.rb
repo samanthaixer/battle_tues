@@ -9,4 +9,9 @@ describe Game do
     expect(player_2).to receive(:receive_attack)
     game.attack(player_2)
   end
+
+  it 'shows that it is player 1 turn to start with' do
+    allow(player_1).to receive(:display_name) { "Sam" }
+    expect(game.current_turn).to eq "Sam's turn"
+  end
 end

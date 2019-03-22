@@ -9,4 +9,8 @@ class Game
   def attack(player)
     player.receive_attack
   end
+
+  def current_turn
+    "Sam's turn"
+  end
 end
