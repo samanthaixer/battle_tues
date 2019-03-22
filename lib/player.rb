@@ -13,10 +13,6 @@ class Player
     @name
   end
 
-  def attack(player)
-    player.receive_attack
-  end
-
   def receive_attack
     "#{@hit_points -= ATTACK_COST}/#{START_HIT_POINTS}"
   end
